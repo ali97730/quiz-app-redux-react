@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { useSelector} from 'react-redux'
+
+import StartPage from "./components/StartPage";
+import Question from "./components/Question";
+import EndScreen from "./components/EndScreen";
+import Login from "./components/Login";
+import PrivateRoute from "./PrivateRoute"
 
 function App() {
+    const user = useSelector((state) => state.user)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter >
+      <Switch>
+        <PrivateRoute exact path="/" ><StartPage/></PrivateRoute>
+        <PrivateRoute exact path="/questions" component={ Question}/>
+        <PrivateRoute exact path="/end" component={EndScreen} />
+        <Route exact path="/login"><Login/></Route>
+        
+      </Switch>
+    </BrowserRouter>
+    
+
   );
 }
 

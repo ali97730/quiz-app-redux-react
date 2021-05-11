@@ -1,0 +1,58 @@
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  object-fit: contain;
+  width: 300px;
+  height: 200px;
+}
+
+h3 {
+  font-family: cursive;
+  color: rgb(61, 187, 145);
+  font-size: larger;
+  font-weight: bolder;
+}
+.logout {
+  width: 270px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.tryagain {
+  width: 270px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: larger;
+  margin-top: 5px;
+}
+.backto__set {
+  text-decoration: none;
+  width: 270px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: orange;
+  color: white;
+  margin-top: 5px;
+  font-size: larger;
+}
+
+.tryagain > a {
+  color: white;
+  text-decoration: none;
+}
+
+.backto__set > a {
+  color: white;
+  text-decoration: none;
+}

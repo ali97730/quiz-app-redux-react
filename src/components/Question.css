@@ -1,0 +1,145 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  justify-content: flex-start;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  padding: 0px;
+  color: rgb(168, 45, 45);
+  font-family: cursive;
+}
+
+.questionNumber {
+  color: rgb(61, 187, 145);
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.fullquestion {
+  background-color: rgb(255, 192, 110);
+  padding: 8%;
+  margin: 5px 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+}
+
+.previousbutton {
+  color: darkblue;
+  margin-left: 0;
+}
+.time {
+  font-weight: bolder;
+  font-size: larger;
+}
+.quitbutton {
+  color: red;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  margin: 3% 5%;
+  background-color: white;
+  color: rgb(61, 187, 145);
+  cursor: pointer;
+  border: 2px solid rgb(61, 187, 145);
+  border-radius: 15px;
+}
+
+.correct {
+  color: beige;
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  margin: 3% 5%;
+  color: white;
+  background-color: rgb(61, 187, 145);
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.selected {
+  color: beige;
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  margin: 3% 5%;
+  color: White;
+  background-color: red;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .fullquestion {
+    background-color: rgb(255, 192, 110);
+    padding: 2%;
+    margin: 10px 5px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+  }
+
+  .item {
+    color: white;
+    background-color: black;
+    width: 40%;
+    height: 40px;
+    margin: 1% 5%;
+    background-color: white;
+    color: rgb(61, 187, 145);
+    cursor: pointer;
+    border: 2px solid rgb(61, 187, 145);
+    border-radius: 15px;
+  }
+
+  .correct {
+    color: beige;
+    background-color: black;
+    width: 40%;
+    height: 40px;
+    margin: 1% 5%;
+    color: white;
+    background-color: rgb(61, 187, 145);
+    border: 1px solid white;
+    border-radius: 15px;
+  }
+
+  .selected {
+    color: beige;
+    background-color: black;
+    width: 40%;
+    height: 40px;
+    margin: 1% 5%;
+    color: White;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 15px;
+  }
+}
